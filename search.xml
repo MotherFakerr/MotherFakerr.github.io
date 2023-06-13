@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>test</title>
-    <url>/2023/06/13/test/</url>
-    <content><![CDATA[<p>wqeweqqew</p>
-]]></content>
-  </entry>
-  <entry>
     <title>使用hexo+github建立个人博客</title>
     <url>/2023/06/09/2023-06-09%20%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>用github搭建个人博客不需要考虑购买服务器，注册域名以及备案等等。本文介绍使用开源框架hexo来生成个人博客，整个流程不需要有前端或者后端基础，只要会用git和代码编辑器就行。</p>
@@ -79,6 +73,12 @@ hexo deploy
 <li>操作中如果出现OpenSSL SSL_read: Connection was reset, errno 10054或者Failed to connect to github.com port 443: Timed out等报错，可以尝试在vscode命令行中输入<code>git config --global --unset http.proxy</code>和<code>git config --global --unset https.proxy</code>，或者在window命令行中输入<code>ipconfig/flushdns</code>，然后再次尝试。</li>
 </ol>
 <h1 id="7-链接"><a href="#7-链接" class="headerlink" title="7.链接"></a>7.链接</h1><p>hexo配置教程和插件推荐（待办）<br>使用hexo创建博文（待办）</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2023/06/13/test/</url>
+    <content><![CDATA[<p>wqeweqqew</p>
 ]]></content>
   </entry>
 </search>

@@ -25,8 +25,8 @@ hexo server
 <img src="/images/使用hexo+github建立个人博客/pasted-6.png" />
 
 <h1 id="4-发布博客"><a href="#4-发布博客" class="headerlink" title="4.发布博客"></a>4.发布博客</h1><p>完成上述步骤后，你已经成功创建了一个本地博客，但是想要让其他人通过网络访问你还需要把你的本地博客发布到git上。</p>
-<p>首先进入博客项目根目录下的_config.yml文件，修改deploy栏的配置。repository需要修改成该教程第一步创建的repo地址，branch需要修改成第一步内github pages设置的发布分支 <strong>（默认是main，按自己喜好命名保持一致即可）</strong>。</p>
-<img src="/images/使用hexo+github建立个人博客/pasted-1.png" />
+<p>首先进入博客项目根目录下的_config.yml文件，修改deploy栏的配置。repository需要修改成该教程第一步创建的repo地址（最好填写ssh地址），branch需要修改成第一步内github pages设置的发布分支 <strong>（默认是main，按自己喜好命名保持一致即可）</strong>。</p>
+<img src="/images/使用hexo+github建立个人博客/pasted-11.png" />
 
 
 <p>进入命令行输入:<br>1.安装hexo发布库</p>
@@ -70,15 +70,12 @@ hexo deploy
 <img src="/images/使用hexo+github建立个人博客/pasted-12.png" />
 
 <ol start="3">
-<li>操作中如果出现OpenSSL SSL_read: Connection was reset, errno 10054或者Failed to connect to github.com port 443: Timed out等报错，可以尝试在vscode命令行中输入<code>git config --global --unset http.proxy</code>和<code>git config --global --unset https.proxy</code>，或者在window命令行中输入<code>ipconfig/flushdns</code>，然后再次尝试。</li>
+<li><p>操作中如果出现OpenSSL SSL_read: Connection was reset, errno 10054或者Failed to connect to github.com port 443: Timed out等报错，可以尝试在vscode命令行中输入<code>git config --global --unset http.proxy</code>和<code>git config --global --unset https.proxy</code>，或者在window命令行中输入<code>ipconfig/flushdns</code>，然后再次尝试。</p>
+</li>
+<li><p>若发布的时候出现<a href="mailto:&#x67;&#x69;&#x74;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#x74;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>: Permission denied (publickey)，可参考<a href="https://blog.csdn.net/helloasimo/article/details/123778112">https://blog.csdn.net/helloasimo/article/details/123778112</a></p>
+</li>
 </ol>
 <h1 id="7-链接"><a href="#7-链接" class="headerlink" title="7.链接"></a>7.链接</h1><p>hexo配置教程和插件推荐（待办）<br>使用hexo创建博文（待办）</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2023/06/13/test/</url>
-    <content><![CDATA[<p>wqeweqqew</p>
 ]]></content>
   </entry>
 </search>

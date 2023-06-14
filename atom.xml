@@ -3,11 +3,11 @@
   <title>MotherFaker的个人博客</title>
   
   <subtitle>随葫芦娃一起消散吧，旧日的幻影</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://motherfakerr.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2023-06-13T09:46:08.092Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://motherfakerr.github.io/"/>
+  <updated>2023-06-14T03:05:13.973Z</updated>
+  <id>https://motherfakerr.github.io/</id>
   
   <author>
     <name>MotherFaker</name>
@@ -18,15 +18,17 @@
   
   <entry>
     <title>使用hexo+github建立个人博客</title>
-    <link href="http://example.com/2023/06/09/2023-06-09%20%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://example.com/2023/06/09/2023-06-09%20%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <link href="https://motherfakerr.github.io/2023/06/09/2023-06-09%20%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://motherfakerr.github.io/2023/06/09/2023-06-09%20%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2023-06-09T06:55:00.000Z</published>
-    <updated>2023-06-13T09:46:08.092Z</updated>
+    <updated>2023-06-14T03:05:13.973Z</updated>
     
     
     <summary type="html">&lt;p&gt;用github搭建个人博客不需要考虑购买服务器，注册域名以及备案等等。本文介绍使用开源框架hexo来生成个人博客，整个流程不需要有前端或者后端基础，只要会用git和代码编辑器就行。&lt;/p&gt;</summary>
     
     
+    
+    <category term="study" scheme="https://motherfakerr.github.io/categories/study/"/>
     
     
   </entry>

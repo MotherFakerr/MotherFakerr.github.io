@@ -64,7 +64,7 @@ hexo deploy
 <li><p>运行<code>hexo g</code>后会发现本地代码库出现了一个public文件夹，该文件夹内存放的就是打包后的发布到博客展示repo的代码，该文件夹最好不要上传到原始代码的repo，可以使用<code>hexo clean</code>清除该文件夹，最好每次发布完成后都运行一下。</p>
 <img src="/images/使用hexo+github建立个人博客/pasted-10.png" />
 </li>
-<li><p>每次发布博客都需要依次运行<code>hexo g</code>,<code>hexo d</code>, <code>hexo clean</code>三个命令是不是觉得有点麻烦。可以在博客原始代码的根目录的package.json中的scripts中添加一行<code>&quot;任意快捷指令&quot;: &quot;hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy &amp;&amp; hexo clean&quot;</code><strong>（上一行末尾注意添加逗号）</strong>。然后使用<code>npm run [任意快捷指令]</code>来一键发布。</p>
+<li><p>每次发布博客都需要依次运行<code>hexo g</code>,<code>hexo d</code>, <code>hexo clean</code>三个命令是不是觉得有点麻烦。可以在博客原始代码的根目录的package.json中的scripts中添加一行：<code>publish: &quot;hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy &amp;&amp; hexo clean&quot;</code><strong>（上一行末尾注意添加逗号）</strong>。然后使用<code>npm run publish</code>来一键发布。（publish可换成任意单词）</p>
 </li>
 </ol>
 <img src="/images/使用hexo+github建立个人博客/pasted-12.png" />
@@ -72,10 +72,13 @@ hexo deploy
 <ol start="3">
 <li><p>操作中如果出现OpenSSL SSL_read: Connection was reset, errno 10054或者Failed to connect to github.com port 443: Timed out等报错，可以尝试在vscode命令行中输入<code>git config --global --unset http.proxy</code>和<code>git config --global --unset https.proxy</code>，或者在window命令行中输入<code>ipconfig/flushdns</code>，然后再次尝试。</p>
 </li>
-<li><p>若发布的时候出现<a href="mailto:&#x67;&#x69;&#x74;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#x74;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>: Permission denied (publickey)，可参考<a href="https://blog.csdn.net/helloasimo/article/details/123778112">https://blog.csdn.net/helloasimo/article/details/123778112</a></p>
+<li><p>若发布的时候出现git@github.com: Permission denied (publickey)，可参考<a href="https://blog.csdn.net/helloasimo/article/details/123778112">https://blog.csdn.net/helloasimo/article/details/123778112</a></p>
 </li>
 </ol>
 <h1 id="7-链接"><a href="#7-链接" class="headerlink" title="7.链接"></a>7.链接</h1><p>hexo配置教程和插件推荐（待办）<br>使用hexo创建博文（待办）</p>
 ]]></content>
+      <categories>
+        <category>study</category>
+      </categories>
   </entry>
 </search>

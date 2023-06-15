@@ -2,12 +2,18 @@
 <search>
   <entry>
     <title>使用hexo+github建立个人博客</title>
-    <url>/2023/06/09/2023-06-09%20%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>用github搭建个人博客不需要考虑购买服务器，注册域名以及备案等等。本文介绍使用开源框架hexo来生成个人博客，整个流程不需要有前端或者后端基础，只要会用git和代码编辑器就行。</p>
+    <url>/2023/06/09/2023-06-09%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<div style="display: flex; flex-direction: row; align-items: center">
+  
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-1.png" width="15%" height="15%"/>
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-13.png" width="30%" height="30%" />
+ </div>
+
+<p>用github搭建个人博客不需要考虑购买服务器，注册域名以及备案等等。本文介绍使用开源框架hexo来生成个人博客，整个流程不需要有前端或者后端基础，只要会用git和代码编辑器就行。</p>
 <span id="more"></span>
-<h1 id="1-github创建repo"><a href="#1-github创建repo" class="headerlink" title="1.github创建repo"></a>1.github创建repo</h1><p>首先需要在github上新建一个repo，repo名<strong>必须</strong>是[你的 github 账号].github.io。<br/><br><img src="/images/使用hexo+github建立个人博客/pasted-3.png" /><br>创建完后进入repo页面，进入setting，进入pages，确认配置。这里这样设置的含义是你的github个人博客会从分支上部署，而部署的分支是master分支。具体部署分支可以根据个人喜好修改。<br/><br><img src="/images/使用hexo+github建立个人博客/pasted-4.png" /><br/></p>
-<h1 id="2-下载Node-js"><a href="#2-下载Node-js" class="headerlink" title="2.下载Node.js"></a>2.下载Node.js</h1><p>下载地址：<a href="https://nodejs.org/en">https://nodejs.org/en</a><br>傻瓜式安转即可<br/><br><img src="/images/使用hexo+github建立个人博客/pasted-5.png" /><br>安装完后打开本地代码编辑器，此教程内以vscode为例，在命令行内输入node -v和npm -v，如果跳出了对应版本则表示安装成功。</p>
-<img src="/images/使用hexo+github建立个人博客/pasted-0.png" />
+<h1 id="1-github创建repo"><a href="#1-github创建repo" class="headerlink" title="1.github创建repo"></a>1.github创建repo</h1><p>首先需要在github上新建一个repo，repo名<strong>必须</strong>是[你的 github 账号].github.io。<br/><br><img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-3.png" /><br>创建完后进入repo页面，进入setting，进入pages，确认配置。这里这样设置的含义是你的github个人博客会从分支上部署，而部署的分支是master分支。具体部署分支可以根据个人喜好修改。<br/><br><img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-4.png" /><br/></p>
+<h1 id="2-下载Node-js"><a href="#2-下载Node-js" class="headerlink" title="2.下载Node.js"></a>2.下载Node.js</h1><p>下载地址：<a href="https://nodejs.org/en">https://nodejs.org/en</a><br>傻瓜式安转即可<br/><br><img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-5.png" /><br>安装完后打开本地代码编辑器，此教程内以vscode为例，在命令行内输入node -v和npm -v，如果跳出了对应版本则表示安装成功。</p>
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-0.png" />
 
 <h1 id="3-创建本地环境"><a href="#3-创建本地环境" class="headerlink" title="3.创建本地环境"></a>3.创建本地环境</h1><p>本地创建一个空文件夹用于存放博客原始文件，用vscode打开该文件夹。</p>
 <p>进入命令行输入:<br>1.全局下载hexo脚手架</p>
@@ -22,11 +28,11 @@
 hexo server
 </code></pre>
 <p>4.浏览器地址栏输入 <a href="http://localhost:4000/">http://localhost:4000/</a> 如果看到以下画面，恭喜你已经成功创建了一个本地博客</p>
-<img src="/images/使用hexo+github建立个人博客/pasted-6.png" />
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-6.png" />
 
 <h1 id="4-发布博客"><a href="#4-发布博客" class="headerlink" title="4.发布博客"></a>4.发布博客</h1><p>完成上述步骤后，你已经成功创建了一个本地博客，但是想要让其他人通过网络访问你还需要把你的本地博客发布到git上。</p>
 <p>首先进入博客项目根目录下的_config.yml文件，修改deploy栏的配置。repository需要修改成该教程第一步创建的repo地址（最好填写ssh地址），branch需要修改成第一步内github pages设置的发布分支 <strong>（默认是main，按自己喜好命名保持一致即可）</strong>。</p>
-<img src="/images/使用hexo+github建立个人博客/pasted-11.png" />
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-11.png" />
 
 
 <p>进入命令行输入:<br>1.安装hexo发布库</p>
@@ -44,7 +50,7 @@ hexo deploy
 </code></pre>
 <p>4.浏览器地址栏输入第一步内的repo名， <strong>[你的 github 账号].github.io</strong>， 就能看到线上的博客啦</p>
 <h1 id="5-保存博客原始代码"><a href="#5-保存博客原始代码" class="headerlink" title="5.保存博客原始代码"></a>5.保存博客原始代码</h1><p>进入你github上的代码repo你会发现代码结构和本地的代码完全不一样，这是因为本地存放的是博客原始代码，而线上的是打包过后的代码。后续对博客进行编辑都是在原始代码上进行修改，然后再打包发布到线上。因此我们还需要维护一个原始代码的repo。</p>
-<img src="/images/使用hexo+github建立个人博客/pasted-2.png" />
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-2.png" />
 
 <p>1.在本地原始代码的根目录创建.gitignore文件，输入</p>
 <pre><code>node_modules/
@@ -52,22 +58,22 @@ hexo deploy
 *.lock
 </code></pre>
 <p>这样上传代码到git的时候就不会把已经安装的依赖项上传，以减小repo的大小。</p>
-<img src="/images/使用hexo+github建立个人博客/pasted-8.png" />
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-8.png" />
 
 <p>2.git上创建新的repo（名称随意），并将本地代码上传至git，推荐用红框内的方式</p>
-<img src="/images/使用hexo+github建立个人博客/pasted-7.png" />
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-7.png" />
 
 <p>3.完成后可以将该repo设置成private，至此，你就拥有了一个博客原始文件repo和一个博客页面展示repo了，大功告成</p>
-<img src="/images/使用hexo+github建立个人博客/pasted-9.png" />
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-9.png" />
 
 <h1 id="6-建议"><a href="#6-建议" class="headerlink" title="6.建议"></a>6.建议</h1><ol>
 <li><p>运行<code>hexo g</code>后会发现本地代码库出现了一个public文件夹，该文件夹内存放的就是打包后的发布到博客展示repo的代码，该文件夹最好不要上传到原始代码的repo，可以使用<code>hexo clean</code>清除该文件夹，最好每次发布完成后都运行一下。</p>
-<img src="/images/使用hexo+github建立个人博客/pasted-10.png" />
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-10.png" />
 </li>
 <li><p>每次发布博客都需要依次运行<code>hexo g</code>,<code>hexo d</code>, <code>hexo clean</code>三个命令是不是觉得有点麻烦。可以在博客原始代码的根目录的package.json中的scripts中添加一行：<code>publish: &quot;hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy &amp;&amp; hexo clean&quot;</code><strong>（上一行末尾注意添加逗号）</strong>。然后使用<code>npm run publish</code>来一键发布。（publish可换成任意单词）</p>
 </li>
 </ol>
-<img src="/images/使用hexo+github建立个人博客/pasted-12.png" />
+<img src="/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-12.png" />
 
 <ol start="3">
 <li><p>操作中如果出现OpenSSL SSL_read: Connection was reset, errno 10054或者Failed to connect to github.com port 443: Timed out等报错，可以尝试在vscode命令行中输入<code>git config --global --unset http.proxy</code>和<code>git config --global --unset https.proxy</code>，或者在window命令行中输入<code>ipconfig/flushdns</code>，然后再次尝试。</p>
@@ -75,10 +81,62 @@ hexo deploy
 <li><p>若发布的时候出现git@github.com: Permission denied (publickey)，可参考<a href="https://blog.csdn.net/helloasimo/article/details/123778112">https://blog.csdn.net/helloasimo/article/details/123778112</a></p>
 </li>
 </ol>
-<h1 id="7-链接"><a href="#7-链接" class="headerlink" title="7.链接"></a>7.链接</h1><p>hexo配置教程和插件推荐（待办）<br>使用hexo创建博文（待办）</p>
+<h1 id="7-相关文章"><a href="#7-相关文章" class="headerlink" title="7.相关文章"></a>7.相关文章</h1><p><a href="/2023/06/14/2023-06-14%E4%BD%BF%E7%94%A8hexo%E5%86%99%E6%96%87%E7%AB%A0">使用hexo写文章</a><br>hexo主题ocean推荐(待办)</p>
 ]]></content>
       <categories>
-        <category>study</category>
+        <category>学习心得</category>
+        <category>博客</category>
       </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用hexo写文章</title>
+    <url>/2023/06/14/2023-06-14%E4%BD%BF%E7%94%A8hexo%E5%86%99%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>首先对于博客来说，有<strong>page</strong>和<strong>post</strong>两种不同类型的文章，区别如下：</p>
+<ol>
+<li><p>page：通常是静态的、永久性的内容，它们用于呈现不经常变化的信息。其创建通常是为了提供持久性和易于导航的信息。如本博客右边栏的 <em>关于</em> 就是一篇page。</p>
+</li>
+<li><p>post：通常是网站中的动态内容，它们按时间顺序排列，以反映最新的更新。其可以有不同的分类或标签，以便组织和检索相关内容。如 <em>本文</em> 及 <em>主页</em>，<em>归档</em> 下的所有文章都是post。</p>
+<span id="more"></span></li>
+</ol>
+<h2 id="1-创建post"><a href="#1-创建post" class="headerlink" title="1.创建post"></a>1.创建post</h2><p>在命令行下输入</p>
+<pre><code>hexo new post [文章名]
+或
+hexo new [文章名]
+</code></pre>
+<p>博客代码根目录下的<code>source/_post/</code>下面会创建一个叫 <strong>[文章名].md</strong> 的文件。<br>所有的post文章都需要放在_post文件夹下，_post文件夹下可自由创建子文件夹。</p>
+<img src="/assets/images/2023-06-14使用hexo写文章/pasted-0.png" />
+
+<p>生成的md文件内包含了文件头信息，可以自己设置文章标题，作者，时间，标签，分类等信息。</p>
+<img src="/assets/images/2023-06-14使用hexo写文章/pasted-1.png" />
+
+<p>设置完后文章在博客中的预览如下</p>
+<img src="/assets/images/2023-06-14使用hexo写文章/pasted-2.png" />
+
+<h2 id="2-创建page"><a href="#2-创建page" class="headerlink" title="2.创建page"></a>2.创建page</h2><p>在命令行下输入</p>
+<pre><code>hexo new page [文章名]
+</code></pre>
+<p>此操作会在<code>_post</code>文件夹平级的位置创建<code>[文章名]/index.md</code></p>
+<img src="/assets/images/2023-06-14使用hexo写文章/pasted-3.png" />
+
+<p>和post不同的是，我们无法在博客的主页直接看到page，需要设置menu信息。对于hexo默认主题，需要在根目录下的_config.landscape.yml中添加</p>
+<pre><code>menu:
+      [菜单名]: [文章名]/
+</code></pre>
+<p>菜单名是页面上显示的文字内容，文章名则为刚创建的page所在的文件夹的名字</p>
+<p>设置好后重新运行<code>hexo s</code>刷新页面，就能发现菜单栏多了一项，点击就能进入刚添加的page</p>
+<img src="/assets/images/2023-06-14使用hexo写文章/pasted-4.png" />
+
+<h2 id="3-md文件填写"><a href="#3-md文件填写" class="headerlink" title="3.md文件填写"></a>3.md文件填写</h2><p>md全称Markdown，拥有一套书写规范。详细语法可在 <a href="http://markdown.p2hp.com/">Markdown 中文网</a> 查看。<br>书写过程中页面会进行热更新，可以实时查看效果。</p>
+]]></content>
+      <categories>
+        <category>学习心得</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
 </search>

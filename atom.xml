@@ -6,7 +6,7 @@
   <link href="https://motherfakerr.github.io/atom.xml" rel="self"/>
   
   <link href="https://motherfakerr.github.io/"/>
-  <updated>2023-06-14T03:05:13.973Z</updated>
+  <updated>2023-06-15T10:01:49.560Z</updated>
   <id>https://motherfakerr.github.io/</id>
   
   <author>
@@ -17,19 +17,54 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用hexo写文章</title>
+    <link href="https://motherfakerr.github.io/2023/06/14/2023-06-14%E4%BD%BF%E7%94%A8hexo%E5%86%99%E6%96%87%E7%AB%A0/"/>
+    <id>https://motherfakerr.github.io/2023/06/14/2023-06-14%E4%BD%BF%E7%94%A8hexo%E5%86%99%E6%96%87%E7%AB%A0/</id>
+    <published>2023-06-14T05:45:00.000Z</published>
+    <updated>2023-06-15T10:01:49.560Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;首先对于博客来说，有&lt;strong&gt;page&lt;/strong&gt;和&lt;strong&gt;post&lt;/strong&gt;两种不同类型的文章，区别如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;page：通常是静态的、永久性的内容，它们用于呈现不经常变化的信息。其创建通常是为了提供持久性和易于导航的信息。如本博客右边栏的 &lt;em&gt;关于&lt;/em&gt; 就是一篇page。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;post：通常是网站中的动态内容，它们按时间顺序排列，以反映最新的更新。其可以有不同的分类或标签，以便组织和检索相关内容。如 &lt;em&gt;本文&lt;/em&gt; 及 &lt;em&gt;主页&lt;/em&gt;，&lt;em&gt;归档&lt;/em&gt; 下的所有文章都是post。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习心得" scheme="https://motherfakerr.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/"/>
+    
+    <category term="博客" scheme="https://motherfakerr.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="https://motherfakerr.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用hexo+github建立个人博客</title>
-    <link href="https://motherfakerr.github.io/2023/06/09/2023-06-09%20%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://motherfakerr.github.io/2023/06/09/2023-06-09%20%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <link href="https://motherfakerr.github.io/2023/06/09/2023-06-09%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://motherfakerr.github.io/2023/06/09/2023-06-09%E4%BD%BF%E7%94%A8hexo-github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2023-06-09T06:55:00.000Z</published>
-    <updated>2023-06-14T03:05:13.973Z</updated>
+    <updated>2023-06-15T10:03:33.441Z</updated>
     
     
-    <summary type="html">&lt;p&gt;用github搭建个人博客不需要考虑购买服务器，注册域名以及备案等等。本文介绍使用开源框架hexo来生成个人博客，整个流程不需要有前端或者后端基础，只要会用git和代码编辑器就行。&lt;/p&gt;</summary>
+    <summary type="html">&lt;div style=&quot;display: flex; flex-direction: row; align-items: center&quot;&gt;
+  
+&lt;img src=&quot;/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-1.png&quot; width=&quot;15%&quot; height=&quot;15%&quot;/&gt;
+&lt;img src=&quot;/assets/images/2023-06-09使用hexo-github建立个人博客/pasted-13.png&quot; width=&quot;30%&quot; height=&quot;30%&quot; /&gt;
+ &lt;/div&gt;
+
+&lt;p&gt;用github搭建个人博客不需要考虑购买服务器，注册域名以及备案等等。本文介绍使用开源框架hexo来生成个人博客，整个流程不需要有前端或者后端基础，只要会用git和代码编辑器就行。&lt;/p&gt;</summary>
     
     
     
-    <category term="study" scheme="https://motherfakerr.github.io/categories/study/"/>
+    <category term="学习心得" scheme="https://motherfakerr.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/"/>
     
+    <category term="博客" scheme="https://motherfakerr.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="https://motherfakerr.github.io/tags/hexo/"/>
     
   </entry>
   
